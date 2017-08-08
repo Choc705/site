@@ -1,8 +1,21 @@
 <html>
 <head>
-<title>Web Game</title>
+<title>ChatBot</title>
 </head>
 <body bgcolor="#2c0449">
 <p><a href="index.html">Back to Home</a></p>
+ <input type=text id="inputField"/>
+	<input type=submit onClick="submit()"/>
+	<div id="response"></div>
+	
+	<script  type="text/javascript">
+		var submit = function(){
+			var inputText = document.getElementById("inputField").value;
+			
+			if(inputText == "hello"){
+				document.getElementById("response").innerHTML = "<b>Hi there traveller!</b>";
+			}
+		}
+	</script>
 </body>
 </html>
